@@ -1,6 +1,6 @@
 {
     "name": "@apurv_zeppelin/vue-otp",
-    "version": "0.1.1",
+    "version": "1.0.0",
     "private": false,
     "description": "Simple but amazing one-time password input component for the web as well as mobile with Vue 2.x.",
     "author": {
