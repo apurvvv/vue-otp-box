@@ -1,0 +1,62 @@
+{
+    "name": "vue-otp",
+    "version": "0.1.0",
+    "private": false,
+    "description": "Simple but amazing one-time password input component for the web as well as mobile with Vue 2.x.",
+    "author": {
+        "name": "apurv",
+        "email": "apurvsingh000@gmail.com"
+    },
+    "repository": "https://github.com/apurvvv/vue-otp",
+    "bugs": "https://github.com/apurvvv/vue-otp/issues",
+    "license": "MIT",
+    "files": [
+        "dist"
+    ],
+    "keywords": [
+        "vue",
+        "vue-otp",
+        "otp",
+        "otp-box",
+        "otp-input"
+    ],
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build",
+        "build:npm": "vue-cli-service build --target lib --name VueOtp src/VueOtp.vue",
+        "lint": "vue-cli-service lint"
+    },
+    "main": "dist/vueOtp.umd.js",
+    "unpkg": "dist/vueOtp.umd.min.js",
+    "dependencies": {
+        "core-js": "^3.6.4",
+        "vue": "^2.6.11"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "^4.2.0",
+        "@vue/cli-plugin-eslint": "^4.2.0",
+        "@vue/cli-service": "^4.2.0",
+        "babel-eslint": "^10.0.3",
+        "eslint": "^6.7.2",
+        "eslint-plugin-vue": "^6.1.2",
+        "vue-template-compiler": "^2.6.11"
+    },
+    "eslintConfig": {
+        "root": true,
+        "env": {
+            "node": true
+        },
+        "extends": [
+            "plugin:vue/essential",
+            "eslint:recommended"
+        ],
+        "parserOptions": {
+            "parser": "babel-eslint"
+        },
+        "rules": {}
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions"
+    ]
+}
