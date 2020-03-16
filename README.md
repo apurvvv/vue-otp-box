@@ -4,7 +4,9 @@
 
 ## Installation
 
+```
 npm i vue-otp-box
+```
 
 ## How to use it
 
