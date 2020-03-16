@@ -1,54 +1,26 @@
 <template>
     <div id="app">
-        <VueOtp />
+        <vue-otp-box :numberOfBoxes="4" @inputValue="emitInput" />
     </div>
 </template>
 
 <script>
-import VueOtp from "./VueOtp";
-export default {
-    name: "App",
-    components: {
-        VueOtp
-    }
-};
+    import VueOtpBox from "./components/VueOtpBox.vue";
+
+    export default {
+        name: "App",
+        components: {
+            VueOtpBox
+        },
+        data() {
+            return {
+                otp: undefined
+            };
+        },
+        methods: {
+            emitInput(value) {
+                this.otp = value;
+            }
+        }
+    };
 </script>
-
-<style>
-#wrapper {
-    width: 100%;
-    margin: 8px auto 2px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-#wrapper input {
-    margin: 0 5px;
-    text-align: center;
-    line-height: 30px;
-    font-size: 35px;
-    border: solid 1px #ccc;
-    box-shadow: 0 0 5px #ccc inset;
-    outline: none;
-    width: 40px;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    border-radius: 3px;
-}
-
-#wrapper input::-moz-selection {
-    background: transparent;
-}
-#wrapper input::selection {
-    background: transparent;
-}
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-input[type="tel"] {
-    -moz-appearance: textfield;
-}
-</style>

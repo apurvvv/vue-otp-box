@@ -1,0 +1,39 @@
+#wrapper {
+    width: 100%;
+    margin: 8px auto 2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#wrapper input {
+    margin: 0 5px !important;
+    text-align: center;
+    line-height: 30px !important;
+    font-size: 35px !important;
+    border: solid 1px #ccc;
+    box-shadow: 0 0 5px #ccc inset;
+    outline: none;
+    width: 38px !important;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    border-radius: 3px;
+}
+
+#wrapper input::-moz-selection {
+    background: transparent;
+}
+
+#wrapper input::selection {
+    background: transparent;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="tel"] {
+    -moz-appearance: textfield;
+}

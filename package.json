@@ -1,6 +1,6 @@
 {
-    "name": "@apurv_zeppelin/vue-otp",
-    "version": "2.0.0",
+    "name": "vue-otp-box",
+    "version": "1.1.1",
     "private": false,
     "description": "Simple but amazing one-time password input component for the web as well as mobile with Vue 2.x.",
     "author": {
@@ -18,18 +18,19 @@
         "vue-otp",
         "otp",
         "otp-box",
-        "otp-input"
+        "otp-input",
+        "otp-input-box",
+        "otp-grid"
     ],
     "scripts": {
         "serve": "vue-cli-service serve",
         "build": "vue-cli-service build",
-        "build:npm": "vue-cli-service build --target lib --name VueOtp src/VueOtp.vue",
+        "build:npm": "vue-cli-service build --target lib --name VueOtpBox ./src/components/index.js",
         "lint": "vue-cli-service lint"
     },
-    "main": "dist/vueOtp.umd.js",
-    "unpkg": "dist/vueOtp.umd.min.js",
+    "main": "./dist/VueOtpBox.common.js",
+    "unpkg": "./dist/VueOtpBox.umd.min.js",
     "dependencies": {
-        "core-js": "^3.6.4",
         "vue": "^2.6.11"
     },
     "devDependencies": {
